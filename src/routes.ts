@@ -3,18 +3,16 @@ import App from './components/App';
 import About from './components/About';
 import Contact from './components/Contact';
 
-import { RouteUI } from './types';
+import { AppRoute } from './types';
 
-const Routes: RouteUI[] = [
+const Routes: AppRoute[] = [
     {
-        path: "/",
-        component: App
-    },
-    {
+        name: 'About',
         path: '/about',
         component: About
     },
     {
+        name: 'Contact',
         path: '/contact',
         component: Contact
     }
